@@ -26,7 +26,7 @@ rm -rf $RPM_BUILD_ROOT
 # Create the directory structure required to lay down our files
 # common
 install -d -m 755 $RPM_BUILD_ROOT/%{_datadir}/candlepin/lib/
-cp *.jar $RPM_BUILD_ROOT/%{_datadir}/candlepin/lib/
+cp repo/*.jar $RPM_BUILD_ROOT/%{_datadir}/candlepin/lib/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
