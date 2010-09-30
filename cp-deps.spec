@@ -7,7 +7,7 @@ Name: candlepin-deps
 Summary: Build dependencies for Candlepin
 Group: Internet/Applications
 License: Various
-Version: 0.0.1
+Version: 0.0.2
 Release: 1
 URL: http://fedorahosted.org/candlepin
 Source: %{name}-%{version}.tar.gz
@@ -34,3 +34,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_sysconfdir}/candlepin/lib/
 
 %changelog
+* Thu Sep 30 2010 jesus m. rodriguez <jesusr@redhat.com> 0.0.2-1
+- new package built with tito
+
