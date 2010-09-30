@@ -21,9 +21,6 @@ Candlepin is an open source entitlement management system.
 %prep
 %setup -q 
 
-%build
-buildr clean test=no package
-
 %install
 rm -rf $RPM_BUILD_ROOT
 # Create the directory structure required to lay down our files
