@@ -25,13 +25,14 @@ Candlepin is an open source entitlement management system.
 rm -rf $RPM_BUILD_ROOT
 # Create the directory structure required to lay down our files
 # common
-install -d -m 755 $RPM_BUILD_ROOT/%{_sysconfdir}/candlepin/lib/
+install -d -m 755 $RPM_BUILD_ROOT/%{_datadir}/candlepin/lib/
+cp *.jar $RPM_BUILD_ROOT/%{_datadir}/candlepin/lib/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%{_sysconfdir}/candlepin/lib/
+%{_datadir}/candlepin/lib/
 
 %changelog
 * Thu Sep 30 2010 jesus m. rodriguez <jesusr@redhat.com> 0.0.2-1
