@@ -1,0 +1,24 @@
+CANDLEPIN-DEPS
+---------------
+This project contains the java dependencies for project candlepin,
+used to build the candlepin rpm.
+
+https://fedorahosted.org/candlepin/
+
+REFRESH THE JARS
+-----------------
+cd ~/path/to/candlepin/proxy
+buildconf/scripts/createcpdeps.sh /path/to/candlepin-deps/
+cd /path/to/candlepin-deps
+
+# now check to see what changed
+git status
+git add/rm as required
+git commit
+
+BUILDING RPM
+-------------
+candlepin-deps uses tito for building the rpm. 
+
+http://github.com/dgoodwin/tito
+
