@@ -2,6 +2,7 @@
 %global _source_filedigest_algorithm 1
 %global _binary_payload w9.gzdio
 %global _source_payload w9.gzdio
+%define __jar_repack %{nil}
 
 Name: candlepin-deps
 Summary: Build dependencies for Candlepin
@@ -25,8 +26,8 @@ Candlepin is an open source entitlement management system.
 rm -rf $RPM_BUILD_ROOT
 # Create the directory structure required to lay down our files
 # common
-install -d -m 755 $RPM_BUILD_ROOT/%{_datadir}/candlepin/lib/
-cp repo/*.jar $RPM_BUILD_ROOT/%{_datadir}/candlepin/lib/
+install -d -m 755 $RPM_BUILD_ROOT%{_datadir}/candlepin/lib/
+cp repo/*.jar $RPM_BUILD_ROOT%{_datadir}/candlepin/lib/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
