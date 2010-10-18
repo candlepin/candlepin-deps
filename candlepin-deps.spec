@@ -8,7 +8,7 @@ Name: candlepin-deps
 Summary: Build dependencies for Candlepin
 Group: Internet/Applications
 License: Various
-Version: 0.0.8
+Version: 0.0.9
 Release: 1%{?dist}
 URL: http://fedorahosted.org/candlepin
 Source: %{name}-%{version}.tar.gz
@@ -36,6 +36,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/candlepin/lib/
 
 %changelog
+* Mon Oct 18 2010 jesus m. rodriguez <jesusr@redhat.com> 0.0.9-1
+- retagging and rebuilding
+
 * Mon Oct 18 2010 jesus m. rodriguez <jesusr@redhat.com> 0.0.8-1
 - add cvs branches (jesusr@redhat.com)
 
