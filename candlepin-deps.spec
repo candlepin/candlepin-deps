@@ -8,7 +8,7 @@ Name: candlepin-deps
 Summary: Build dependencies for Candlepin
 Group: Internet/Applications
 License: Various
-Version: 0.0.6
+Version: 0.0.7
 Release: 1%{?dist}
 URL: http://fedorahosted.org/candlepin
 Source: %{name}-%{version}.tar.gz
@@ -36,6 +36,11 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/candlepin/lib/
 
 %changelog
+* Mon Oct 18 2010 jesus m. rodriguez <jesusr@redhat.com> 0.0.7-1
+- add dist to release (jesusr@redhat.com)
+- updated qpid (jesusr@redhat.com)
+- used for its Equals and HashCode Builders (jesusr@redhat.com)
+
 * Fri Oct 15 2010 jesus m. rodriguez <jesusr@redhat.com> 0.0.6-1
 - use only one branch for now (jesusr@redhat.com)
 
