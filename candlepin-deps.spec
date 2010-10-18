@@ -9,7 +9,7 @@ Summary: Build dependencies for Candlepin
 Group: Internet/Applications
 License: Various
 Version: 0.0.6
-Release: 1
+Release: 1%{?dist}
 URL: http://fedorahosted.org/candlepin
 Source: %{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
