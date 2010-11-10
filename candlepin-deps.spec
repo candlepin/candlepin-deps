@@ -8,7 +8,7 @@ Name: candlepin-deps
 Summary: Build dependencies for Candlepin
 Group: Internet/Applications
 License: Various
-Version: 0.0.10
+Version: 0.0.11
 Release: 1%{?dist}
 URL: http://fedorahosted.org/candlepin
 Source: %{name}-%{version}.tar.gz
@@ -36,6 +36,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/candlepin/lib/
 
 %changelog
+* Wed Nov 10 2010 jesus m. rodriguez <jesusr@redhat.com> 0.0.11-1
+- adding jldap, and new qpid (jesusr@redhat.com)
+
 * Mon Oct 25 2010 jesus m. rodriguez <jesusr@redhat.com> 0.0.10-1
 - 646000: adding c3p0 (jesusr@redhat.com)
 
