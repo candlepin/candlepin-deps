@@ -8,7 +8,7 @@ Name: candlepin-deps
 Summary: Build dependencies for Candlepin
 Group: Internet/Applications
 License: Various
-Version: 0.0.12
+Version: 0.0.13
 Release: 1%{?dist}
 URL: http://fedorahosted.org/candlepin
 Source: %{name}-%{version}.tar.gz
@@ -36,6 +36,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/candlepin/lib/
 
 %changelog
+* Thu Feb 24 2011 jesus m. rodriguez <jesusr@redhat.com> 0.0.13-1
+- adding rhino 1.7 (jesusr@redhat.com)
+
 * Tue Dec 14 2010 jesus m. rodriguez <jesusr@redhat.com> 0.0.12-1
 - adding oauth as a dependency (jesusr@redhat.com)
 
