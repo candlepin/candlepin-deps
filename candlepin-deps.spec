@@ -8,7 +8,7 @@ Name: candlepin-deps
 Summary: Build dependencies for Candlepin
 Group: Internet/Applications
 License: Various
-Version: 0.0.14
+Version: 0.0.15
 Release: 1%{?dist}
 URL: http://fedorahosted.org/candlepin
 Source: %{name}-%{version}.tar.gz
@@ -36,6 +36,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/candlepin/lib/
 
 %changelog
+* Thu May 12 2011 jesus m. rodriguez <jesusr@redhat.com> 0.0.15-1
+- updating cp-bouncycastle (jesusr@redhat.com)
+
 * Wed May 11 2011 jesus m. rodriguez <jesusr@redhat.com> 0.0.14-1
 - add new custom bouncycastle (jesusr@redhat.com)
 
