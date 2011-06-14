@@ -8,7 +8,7 @@ Name: candlepin-deps
 Summary: Build dependencies for Candlepin
 Group: Internet/Applications
 License: Various
-Version: 0.0.15
+Version: 0.0.16
 Release: 1%{?dist}
 URL: http://fedorahosted.org/candlepin
 Source: %{name}-%{version}.tar.gz
@@ -36,6 +36,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/candlepin/lib/
 
 %changelog
+* Tue Jun 14 2011 jesus m. rodriguez <jesusr@redhat.com> 0.0.16-1
+- renamed qpid*.jars, upgraded to postgresql 9 driver.
+
 * Thu May 12 2011 jesus m. rodriguez <jesusr@redhat.com> 0.0.15-1
 - updating cp-bouncycastle (jesusr@redhat.com)
 
