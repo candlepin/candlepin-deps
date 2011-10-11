@@ -8,7 +8,7 @@ Name: candlepin-deps
 Summary: Build dependencies for Candlepin
 Group: Internet/Applications
 License: Various
-Version: 0.0.18
+Version: 0.0.19
 Release: 1%{?dist}
 URL: http://fedorahosted.org/candlepin
 Source: %{name}-%{version}.tar.gz
@@ -36,6 +36,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/candlepin/lib/
 
 %changelog
+* Tue Oct 11 2011 jesus m. rodriguez <jesusr@redhat.com> 0.0.19-1
+- upgrade to fedora based bouncycastle 1.46 (jesusr@redhat.com)
+
 * Wed Sep 14 2011 jesus m. rodriguez <jesusr@redhat.com> 0.0.18-1
 - upgrade to RESTEasy 2.2.1GA (jesusr@redhat.com)
 
