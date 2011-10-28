@@ -8,7 +8,7 @@ Name: candlepin-deps
 Summary: Build dependencies for Candlepin
 Group: Internet/Applications
 License: Various
-Version: 0.0.20
+Version: 0.0.21
 Release: 1%{?dist}
 URL: http://fedorahosted.org/candlepin
 Source: %{name}-%{version}.tar.gz
@@ -36,6 +36,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/candlepin/lib/
 
 %changelog
+* Fri Oct 28 2011 jesus m. rodriguez <jesusr@redhat.com> 0.0.21-1
+- use upstream bouncycastle for candlepin 0.4.x (jesusr@redhat.com)
+
 * Thu Oct 13 2011 jesus m. rodriguez <jesusr@redhat.com> 0.0.20-1
 - use right dist-cvs branch (jesusr@redhat.com)
 
