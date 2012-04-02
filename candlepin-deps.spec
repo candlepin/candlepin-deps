@@ -8,7 +8,7 @@ Name: candlepin-deps
 Summary: Build dependencies for Candlepin
 Group: Internet/Applications
 License: Various
-Version: 0.0.23
+Version: 0.0.24
 Release: 1%{?dist}
 URL: http://fedorahosted.org/candlepin
 Source: %{name}-%{version}.tar.gz
@@ -36,6 +36,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/candlepin/lib/
 
 %changelog
+* Mon Apr 02 2012 jesus m. rodriguez <jesusr@redhat.com> 0.0.24-1
+- update jackson and remove qpid deps (jesusr@redhat.com)
+
 * Tue Jan 17 2012 jesus m. rodriguez <jesusr@redhat.com> 0.0.23-1
 - config should be releaser not builder (jesusr@redhat.com)
 
