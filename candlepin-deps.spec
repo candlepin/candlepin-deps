@@ -8,7 +8,7 @@ Name: candlepin-deps
 Summary: Build dependencies for Candlepin
 Group: Internet/Applications
 License: Various
-Version: 0.1.0
+Version: 0.1.1
 Release: 1%{?dist}
 URL: http://fedorahosted.org/candlepin
 Source: %{name}-%{version}.tar.gz
@@ -36,6 +36,11 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/candlepin/lib/
 
 %changelog
+* Fri May 04 2012 jesus m. rodriguez <jesusr@redhat.com> 0.1.1-1
+- upgraded to guice 3.0, resteasy 2.3.1, and others (jesusr@redhat.com)
+- adding epel (jesusr@redhat.com)
+- dist-git (jesusr@redhat.com)
+
 * Mon Apr 02 2012 jesus m. rodriguez <jesusr@redhat.com> 0.0.24-1
 - update jackson and remove qpid deps (jesusr@redhat.com)
 
