@@ -8,7 +8,7 @@ Name: candlepin-deps
 Summary: Build dependencies for Candlepin
 Group: Internet/Applications
 License: Various
-Version: 0.1.1
+Version: 0.1.2
 Release: 1%{?dist}
 URL: http://fedorahosted.org/candlepin
 Source: %{name}-%{version}.tar.gz
@@ -36,6 +36,11 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/candlepin/lib/
 
 %changelog
+* Fri Jun 01 2012 Alex Wood <awood@redhat.com> 0.1.2-1
+- bump quartz version to 2.1.5 (cduryee@redhat.com)
+- removed f15, rhel, and internal tags as they are no longer needed.
+  (jesusr@redhat.com)
+
 * Fri May 04 2012 jesus m. rodriguez <jesusr@redhat.com> 0.1.1-1
 - upgraded to guice 3.0, resteasy 2.3.1, and others (jesusr@redhat.com)
 - adding epel (jesusr@redhat.com)
