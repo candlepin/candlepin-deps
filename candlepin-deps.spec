@@ -8,7 +8,7 @@ Name: candlepin-deps
 Summary: Build dependencies for Candlepin
 Group: Internet/Applications
 License: Various
-Version: 0.1.2
+Version: 0.1.3
 Release: 1%{?dist}
 URL: http://fedorahosted.org/candlepin
 Source: %{name}-%{version}.tar.gz
@@ -36,6 +36,11 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/candlepin/lib/
 
 %changelog
+* Fri Jul 27 2012 jesus m. rodriguez <jesusr@redhat.com> 0.1.3-1
+- add f17 (jesusr@redhat.com)
+- removed f15, rhel,f16-i386 and internal tags as they are no longer needed.
+  (jesusr@redhat.com)
+
 * Fri Jun 01 2012 Alex Wood <awood@redhat.com> 0.1.2-1
 - bump quartz version to 2.1.5 (cduryee@redhat.com)
 - removed f15, rhel, and internal tags as they are no longer needed.
