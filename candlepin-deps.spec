@@ -8,7 +8,7 @@ Name: candlepin-deps
 Summary: Build dependencies for Candlepin
 Group: Internet/Applications
 License: Various
-Version: 0.1.4
+Version: 0.1.5
 Release: 1%{?dist}
 URL: http://fedorahosted.org/candlepin
 Source: %{name}-%{version}.tar.gz
@@ -36,6 +36,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/candlepin/lib/
 
 %changelog
+* Mon Feb 18 2013 jesus m. rodriguez <jesusr@redhat.com> 0.1.5-1
+- add Fedora 18 to the build list (jesusr@redhat.com)
+- Bump rhino from 1.7R2 to 1.7R3. (dgoodwin@redhat.com)
+
 * Mon Aug 06 2012 jesus m. rodriguez <jesusr@redhat.com> 0.1.4-1
 - allow building in katello koji (jesusr@redhat.com)
 
