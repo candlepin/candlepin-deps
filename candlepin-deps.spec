@@ -8,7 +8,7 @@ Name: candlepin-deps
 Summary: Build dependencies for Candlepin
 Group: Internet/Applications
 License: Various
-Version: 0.1.5
+Version: 0.1.6
 Release: 1%{?dist}
 URL: http://fedorahosted.org/candlepin
 Source: %{name}-%{version}.tar.gz
@@ -36,6 +36,15 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/candlepin/lib/
 
 %changelog
+* Tue Nov 26 2013 jesus m. rodriguez <jesusr@redhat.com> 0.1.6-1
+- Revert "bump version to 0.2.0" (jesusr@redhat.com)
+- update for logback and slf4j changes. (jesusr@redhat.com)
+- remove F16, add F19 builds (jesusr@redhat.com)
+- bump version to 0.2.0 (jesusr@redhat.com)
+- make releasers consistent with candlepin (jesusr@redhat.com)
+- Update for Hibernate 4 (wpoteat@redhat.com)
+- added koji configs (jesusr@redhat.com)
+
 * Mon Feb 18 2013 jesus m. rodriguez <jesusr@redhat.com> 0.1.5-1
 - add Fedora 18 to the build list (jesusr@redhat.com)
 - Bump rhino from 1.7R2 to 1.7R3. (dgoodwin@redhat.com)
