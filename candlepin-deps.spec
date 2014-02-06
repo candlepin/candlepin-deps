@@ -8,7 +8,7 @@ Name: candlepin-deps
 Summary: Build dependencies for Candlepin
 Group: Internet/Applications
 License: Various
-Version: 0.2.1
+Version: 0.2.2
 Release: 1%{?dist}
 URL: http://fedorahosted.org/candlepin
 Source: %{name}-%{version}.tar.gz
@@ -36,6 +36,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/candlepin/lib/
 
 %changelog
+* Thu Feb 06 2014 jesus m. rodriguez <jesusr@redhat.com> 0.2.2-1
+- upgrade to jackson 2.3.0 (jesusr@redhat.com)
+
 * Tue Dec 10 2013 jesus m. rodriguez <jesusr@redhat.com> 0.2.1-1
 - add hibernate4, version bump candlepin-deps (jesusr@redhat.com)
 
