@@ -8,7 +8,7 @@ Name: candlepin-deps
 Summary: Build dependencies for Candlepin
 Group: Internet/Applications
 License: Various
-Version: 0.2.3
+Version: 0.2.4
 Release: 1%{?dist}
 URL: http://fedorahosted.org/candlepin
 Source: %{name}-%{version}.tar.gz
@@ -36,6 +36,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/candlepin/lib/
 
 %changelog
+* Fri Apr 25 2014 jesus m. rodriguez <jesusr@redhat.com> 0.2.4-1
+- Addition of liquibase-core (wpoteat@redhat.com)
+- remove f18 (jesusr@redhat.com)
+
 * Fri Apr 11 2014 jesus m. rodriguez <jesusr@redhat.com> 0.2.3-1
 - add hibernate validation api (jesusr@redhat.com)
 - remove f17, add f20 (jesusr@redhat.com)
