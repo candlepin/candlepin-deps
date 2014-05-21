@@ -8,7 +8,7 @@ Name: candlepin-deps
 Summary: Build dependencies for Candlepin
 Group: Internet/Applications
 License: Various
-Version: 0.2.4
+Version: 0.2.5
 Release: 1%{?dist}
 URL: http://fedorahosted.org/candlepin
 Source: %{name}-%{version}.tar.gz
@@ -36,6 +36,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/candlepin/lib/
 
 %changelog
+* Wed May 21 2014 jesus m. rodriguez <jesusr@redhat.com> 0.2.5-1
+- add qpid jms support, update resteasy. (jesusr@redhat.com)
+
 * Fri Apr 25 2014 jesus m. rodriguez <jesusr@redhat.com> 0.2.4-1
 - Addition of liquibase-core (wpoteat@redhat.com)
 - remove f18 (jesusr@redhat.com)
