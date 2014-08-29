@@ -8,7 +8,7 @@ Name: candlepin-deps
 Summary: Build dependencies for Candlepin
 Group: Internet/Applications
 License: Various
-Version: 0.2.7
+Version: 0.3.0
 Release: 1%{?dist}
 URL: http://fedorahosted.org/candlepin
 Source: %{name}-%{version}.tar.gz
@@ -17,7 +17,19 @@ Vendor: Red Hat, Inc
 BuildArch: noarch
 
 %description
-Candlepin is an open source entitlement management system.
+Candlepin is an open source entitlement management system
+
+%package common
+Summary: Build dependencies for code common to the Candlepin family of projects
+
+%description common
+Build dependencies for code common to the Candlepin family of projects.
+
+%package gutterball
+Summary: Build dependencies for Gutterball
+
+%description gutterball
+Build dependencies for Gutterball.
 
 %prep
 %setup -q 
@@ -27,13 +39,23 @@ rm -rf $RPM_BUILD_ROOT
 # Create the directory structure required to lay down our files
 # common
 install -d -m 755 $RPM_BUILD_ROOT%{_datadir}/candlepin/lib/
-cp repo/*.jar $RPM_BUILD_ROOT%{_datadir}/candlepin/lib/
+install -d -m 755 $RPM_BUILD_ROOT%{_datadir}/candlepin/common/lib/
+install -d -m 755 $RPM_BUILD_ROOT%{_datadir}/candlepin/gutterball/lib/
+cp repo/server/*.jar $RPM_BUILD_ROOT%{_datadir}/candlepin/lib/
+cp repo/common/*.jar $RPM_BUILD_ROOT%{_datadir}/candlepin/common/lib/
+cp repo/gutterball/*.jar $RPM_BUILD_ROOT%{_datadir}/candlepin/gutterball/lib/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %{_datadir}/candlepin/lib/
+
+%files common
+%{_datadir}/candlepin/common/lib/
+
+%files gutterball
+%{_datadir}/candlepin/gutterball/lib/
 
 %changelog
 * Tue Jul 01 2014 jesus m. rodriguez <jesusr@redhat.com> 0.2.7-1
