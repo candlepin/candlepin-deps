@@ -8,7 +8,7 @@ Name: candlepin-deps
 Summary: Build dependencies for Candlepin
 Group: Internet/Applications
 License: Various
-Version: 0.3.0
+Version: 0.3.1
 Release: 1%{?dist}
 URL: http://fedorahosted.org/candlepin
 Source: %{name}-%{version}.tar.gz
@@ -58,6 +58,12 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/candlepin/gutterball/lib/
 
 %changelog
+* Fri Sep 05 2014 jesus m. rodriguez <jesusr@redhat.com> 0.3.1-1
+- Update jars for candlepin-common. (jesusr@redhat.com)
+- Fix tito warnings (jesusr@redhat.com)
+- break into subpackages (jesusr@redhat.com)
+- reorganize deps for common, gutterball, candlepin (jesusr@redhat.com)
+
 * Tue Jul 01 2014 jesus m. rodriguez <jesusr@redhat.com> 0.2.7-1
 - Adding jackson-datatype-hibernate4-2.3.0 (jesusr@redhat.com)
 
