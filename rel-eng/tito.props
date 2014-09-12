@@ -5,6 +5,9 @@ tagger = tito.tagger.VersionTagger
 [katello-thirdparty-candlepin-rhel6]
 disttag = .el6
 
+[katello-thirdparty-candlepin-rhel7]
+disttag = .el7
+
 [katello-thirdparty-candlepin-fedora18]
 disttag = .fc18
 
