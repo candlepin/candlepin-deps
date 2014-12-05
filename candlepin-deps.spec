@@ -8,7 +8,7 @@ Name: candlepin-deps
 Summary: Build dependencies for Candlepin
 Group: Internet/Applications
 License: Various
-Version: 0.3.3
+Version: 0.3.4
 Release: 1%{?dist}
 URL: http://fedorahosted.org/candlepin
 Source: %{name}-%{version}.tar.gz
@@ -58,6 +58,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/candlepin/gutterball/lib/
 
 %changelog
+* Fri Dec 05 2014 Alex Wood <awood@redhat.com> 0.3.4-1
+- Update dependencies. (awood@redhat.com)
+
 * Mon Nov 10 2014 Chris Rog <crog@redhat.com> 0.3.3-1
 - add disttag (jesusr@redhat.com)
 
