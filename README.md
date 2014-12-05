@@ -17,7 +17,6 @@ git commit
 ```
 
 # Building an RPM
--------------
 candlepin-deps uses tito for building the rpm. 
 
 http://github.com/dgoodwin/tito
