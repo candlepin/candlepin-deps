@@ -8,7 +8,7 @@ Name: candlepin-deps
 Summary: Build dependencies for Candlepin
 Group: Internet/Applications
 License: Various
-Version: 0.3.4
+Version: 0.3.5
 Release: 1%{?dist}
 URL: http://fedorahosted.org/candlepin
 Source: %{name}-%{version}.tar.gz
@@ -58,6 +58,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/candlepin/gutterball/lib/
 
 %changelog
+* Mon Feb 02 2015 Devan Goodwin <dgoodwin@rm-rf.ca> 0.3.5-1
+- Update for new qpid 0.33 and log4j bridge. (dgoodwin@redhat.com)
+
 * Fri Dec 05 2014 Alex Wood <awood@redhat.com> 0.3.4-1
 - Update dependencies. (awood@redhat.com)
 
